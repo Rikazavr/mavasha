@@ -1,0 +1,39 @@
+.homepage {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('../images/pattern.png');
+  background-size: 200px;
+  background-repeat: repeat;
+
+  &__inner {
+    max-width: 988px;
+    margin: 0 auto;
+  }
+}
+
+@keyframes floatVert {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(25%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.animated-title {
+  font-size: 66px;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  color: #AED6F1;
+  text-shadow: -2px 2px #FF0000;
+
+  &__char {
+    display: inline-block;
+  }
+  &__char--animated {
+    animation: floatVert 2s infinite;
+  }
+}

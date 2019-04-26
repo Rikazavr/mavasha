@@ -1,6 +1,4 @@
-@import 'fonts';
+@import 'common';
 
-body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: cornflowerblue;
-}
+// pages
+@import 'homepage';
